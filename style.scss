@@ -16,6 +16,8 @@ $var1: 1440;
 $var2: 100%;
 $var3: 1408;
 $var4: 580;
+$var5: 320;
+$var6: 736;
 
 // width: $var3*$var2/$var1;
 
@@ -97,7 +99,7 @@ $var4: 580;
         }
 
         &-blocks  {
-
+            margin-right: 16px;
             @include mixin.flex(space-between, flex-start, 16px, row);
 
             li {
@@ -144,5 +146,96 @@ $var4: 580;
                 }
             }
         }
+    }
+}
+
+.one {
+    width: $var3*$var2/$var1;
+    margin: auto;
+
+    @include mixin.flex(space-between, flex-start, 16px, row);
+
+    &-left {
+        width: $var5*$var2/$var3;
+        @include mixin.flex(flex-start, flex-start, 0, column);
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 12px;
+
+        &-img {
+            width: 296px;
+            height: 182px;
+            background-color: #e5e5e5;
+            border-radius: 10px;
+            margin-bottom: 4px;
+        }
+
+        h5 {
+            padding: 0;
+            margin: 0;
+            @include mixin.font(18px, 800, 110%, #000000);
+            margin-bottom: 12px;
+        }
+
+        &-blocks {
+            @include mixin.flex(flex-start, flex-start, 8px, column);
+            a {
+                text-decoration: none;
+                .one-left-blocks-block {
+                    width: 152%;
+                    @include mixin.flex(flex-start, flex-start, 12px, row);
+
+                    &-img {
+                        width: 72px;
+                        height: 72px;
+                        border-radius: 10px;
+                        background-color: #e3e3e3;
+                    }
+
+                    &-text {
+                        &-head {
+                            width: max-content;
+                            @include mixin.font(14px, 500, 120%, #000000);
+                            padding: 4px 8px;
+                            background-color: #93FF82;
+                            border: 1px solid #000000;
+                            border-radius: 6px;
+                            margin-bottom: 4px;
+                        }
+
+                        .par {
+                            @include mixin.font(18px, 400, 120%, #000000);
+                            margin: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-center {
+        width: $var6*$var2/$var3;
+        padding: 16px;
+        background-color: #ffffff;
+        border-radius: 10px;
+
+
+        &-img {
+            width: 704px;
+            height: 364px;
+            background-color: #9C9CFF;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            @include mixin.font(36px, 800, 110%, #000000);
+            margin: 0;
+        }
+    }
+
+    &-right {
+        width: $var5*$var2/$var3;
     }
 }
