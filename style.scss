@@ -206,6 +206,7 @@ $var6: 736;
                         .par {
                             @include mixin.font(18px, 400, 120%, #000000);
                             margin: 0;
+                            padding-left: 4px;
 
                         }
                     }
@@ -237,5 +238,41 @@ $var6: 736;
 
     &-right {
         width: $var5*$var2/$var3;
+        padding: 12px 16px;
+        background-color: #ffffff;
+        border-radius: 10px;
+
+        h5 {
+            @include mixin.font(16px, 700, 120%, #000000);
+            margin: 0;
+            margin-bottom: 12px;
+        }
+
+        .one-right-list {
+            @include mixin.flex(flex-start, flex-start, 12px, column);
+
+            li {
+                p {
+                    margin: 0;
+                    padding: 12px 0;
+                    @include mixin.font(18px, 500, 120%, #000000);
+                    text-transform: lowercase;
+                    border-top: 1px solid #e3e3e3;
+                   
+                    span {
+                        color: #777777;
+                    }
+                
+                }
+
+                
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
     }
 }
