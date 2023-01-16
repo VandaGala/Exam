@@ -1,0 +1,148 @@
+@use 'mixin.scss';
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+
+$var1: 1440;
+$var2: 100%;
+$var3: 1408;
+$var4: 580;
+
+// width: $var3*$var2/$var1;
+
+
+.header {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 32px;
+
+    &-top {
+        width: 100%;
+        height: 323px;
+        background-color: #93FF82;
+        @include mixin.flex(center, center, 0, row);
+        @include mixin.font(48px, 500, 58px, #000000);
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &-search {
+        width: $var3*$var2/$var1;
+        margin: auto;
+        background-color: #000000;
+        border-radius: 10px;
+        margin-bottom: 16px;
+        @include mixin.flex(center, center, 0, row);
+        padding: 14px 24px;
+
+        .logo {
+            margin-right: 271px;
+        }
+
+        &-span {
+            width: $var4*$var2/$var3;
+            height: 48px;
+            background-color: #302C2C;
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-right: 29px;
+
+            background-image: url(../images/Vector.png);
+            background-repeat: no-repeat;
+            background-position: 98% center;
+
+
+            input {
+                background-color:  #302C2C;
+                border: none;
+
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+        &-drop-down1 {
+            @include mixin.flex(flex-start, center, 4px, row);
+            @include mixin.font(18px, 400, 120%, #ffffff);
+            margin-right: 56px;
+        }
+
+        &-drop-down2 {
+            @include mixin.flex(flex-start, center, 4px, row);
+            @include mixin.font(18px, 400, 120%, #ffffff);
+        }
+    }
+
+    &-list {
+        width: $var3*$var2/$var1;
+        margin: auto;
+
+        @include mixin.flex(space-between, center, 0, row);
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;            
+        }
+
+        &-blocks  {
+
+            @include mixin.flex(space-between, flex-start, 16px, row);
+
+            li {
+                #first-li {
+                    @include mixin.font(20px, 400, 120%, #ffffff);
+                    background-color: #000000;
+                    border: 2px solid #000000;
+                    border-radius: 8px;
+                }
+
+                .header-li {
+                    @include mixin.font(20px, 400, 120%, #808080);
+                    padding: 12px 20px;
+                    border: 2px solid #808080;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        &-checkbox {
+            #header-checkbox {
+                display: none;
+            }
+
+            .header-checkbox-basic {
+                width: 84px;
+                height: 48px;
+                background-color: #000000;
+                border-radius: 32px;
+                background-image: url(../images/Vector1.png);
+                background-repeat: no-repeat;
+                background-position: 80% center;
+                position: relative;
+                margin-left: 21px;
+
+                &-circle {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ffffff;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 8.5%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}

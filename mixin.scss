@@ -1,0 +1,15 @@
+@mixin flex($justify, $align, $gap, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin font($size, $weight, $line, $color) {
+    font-family: 'Inter';
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    color: $color;
+}
