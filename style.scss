@@ -593,7 +593,7 @@ $var10: 948;
     width: $var3*$var2/$var1;
     margin: auto;
     @include mixin.flex(flex-start, flex-start, 16px,row);
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 
     &-right {
         width: $var7*$var2/$var3;
@@ -669,4 +669,87 @@ $var10: 948;
         @include mixin.font(48px, 500, 58px, #000000);
         text-align: center;
     }
+}
+
+.eight {
+    width: $var3*$var2/$var1;
+    margin: auto;
+    @include mixin.flex(flex-start, flex-start, 26px, column);
+    margin-bottom: 16px;
+
+    &-top {
+        width: 100%;
+        &-btn {
+            width: 100%;
+            @include mixin.flex(center, center, 0, row);
+            padding: 52px 0;
+
+            background-color: #000000;
+            border-radius: 10px;
+            @include mixin.font(36px, 600, 100%, #ffffff);
+        }
+    }
+
+    &-bottom {
+        width: 100%;
+
+        &-head {
+            width: 100%;
+            background-color: #FFC7F3;
+            @include mixin.flex(center, center, 32.36px, column);
+            text-align: center;
+            @include mixin.font(72px, 600, 100%, #000000);
+            padding: 48px 0;
+            border-radius: 10px;
+
+            p {
+                width: 84%;
+            }
+        }
+
+        &-form form {
+            width: 100%;
+            @include mixin.flex(space-between, flex-start, 24px, row);
+        }
+
+        &-form {
+            width: 100%;
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 24px;
+
+            &-btn {
+                width: 41.2%;
+                background-color: #EA2E34;
+                padding: 52px 0;
+                @include mixin.font(36px, 600, 100%, #ffffff);
+                border: none;
+                border-radius: 10px;
+            }
+
+            .input {
+                width: 57%;
+            }
+
+            .input input::placeholder {
+                @include mixin.font(36px, 600, 100%, #bebebe);
+            }
+
+            .input input {
+                padding: 52px 0px 52px 32px;
+                border-radius: 10px;
+                height: 140px;
+                width: 100%;
+                background-color: #272727;
+                border: none;
+            }
+
+            .input input:focus {
+                outline: none;
+            }
+
+
+        }
+    }
+
 }

@@ -683,7 +683,7 @@
   align-items: flex-start;
   gap: 16px;
   flex-direction: row;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 .seven-right {
   width: 32.6704545455%;
@@ -786,4 +786,104 @@
   line-height: 58px;
   color: #000000;
   text-align: center;
+}
+
+.eight {
+  width: 97.7777777778%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 26px;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.eight-top {
+  width: 100%;
+}
+.eight-top-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+  padding: 52px 0;
+  background-color: #000000;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #ffffff;
+}
+.eight-bottom {
+  width: 100%;
+}
+.eight-bottom-head {
+  width: 100%;
+  background-color: #FFC7F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32.36px;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #000000;
+  padding: 48px 0;
+  border-radius: 10px;
+}
+.eight-bottom-head p {
+  width: 84%;
+}
+.eight-bottom-form form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-direction: row;
+}
+.eight-bottom-form {
+  width: 100%;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 24px;
+}
+.eight-bottom-form-btn {
+  width: 41.2%;
+  background-color: #EA2E34;
+  padding: 52px 0;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+.eight-bottom-form .input {
+  width: 57%;
+}
+.eight-bottom-form .input input::placeholder {
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #bebebe;
+}
+.eight-bottom-form .input input {
+  padding: 52px 0px 52px 32px;
+  border-radius: 10px;
+  height: 140px;
+  width: 100%;
+  background-color: #272727;
+  border: none;
+}
+.eight-bottom-form .input input:focus {
+  outline: none;
 }
