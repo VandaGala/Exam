@@ -751,5 +751,148 @@ $var10: 948;
 
         }
     }
+}
 
+.footer {
+    width: $var3*$var2/$var1;
+    margin: auto;
+    @include mixin.flex(flex-start, flex-start, 16px, column);
+    padding-bottom: 306px;
+    background-image: url(../images/LOGOTYPE1.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+
+    &-top {
+        width: 100%;
+        @include mixin.flex(space-between, flex-start, 16px, row);
+
+        &-block1 {
+            width: 32.7%;
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 24px;
+            @include mixin.flex(space-between, flex-start, 0, column);
+
+            p {
+                @include mixin.font(36px, 800, 110%, #ffffff);
+                margin-top: 136px;
+            }
+        }
+
+        &-block2 {
+            width: 66.2%;
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 24px;
+            @include mixin.flex(space-between, flex-start, 0, column);
+
+            &-top {
+                width: 100%;
+                @include mixin.flex(space-between, flex-start, 0, row);
+                margin-bottom: 212px;
+                
+                p {
+                    @include mixin.font(36px, 800, 110%, #ffffff);
+                }
+
+                &-btn {
+                    width: 320px;
+                    height: 48px;
+                    background-color: #FFCB45;
+                    @include mixin.font(18px, 800, 110%, #000000);
+                    padding: 13px 0 15px 0;
+                    border-radius: 10px;
+                }
+            }
+
+            &-bottom {
+                width: 100%;
+                @include mixin.flex(space-between, flex-start, 0, row);
+
+                p {
+                    @include mixin.font(36px, 600, 110%, #ffffff);
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        width: 100%;
+        @include mixin.flex(space-between, flex-start, 16px, row);
+
+
+        &-block1 {
+            width: 932px;
+            @include mixin.flex(space-between, flex-start, 108px, column);
+            padding: 16px;
+            background-color: #000000;
+            border-radius: 10px;
+
+            p {
+                width: 421px;
+                @include mixin.font(36px, 800, 120%, #ffffff);
+            }
+
+            &-link {
+                width: 320px;
+                padding: 13px 61px 15px 61px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                align-self: flex-end;
+
+                a {
+                    text-decoration: none;
+                    @include mixin.font(18px, 800, 110%, #000000);
+                }
+            }
+        }
+
+        &-block2 {
+            background-color: #000000;
+            width: 148px;
+            height: 360px;
+            border-radius: 10px;
+            // transform: rotate(-90deg);
+            @include mixin.flex(center, center, 0, row);
+            text-align: center;
+            transform: rotateX(180deg) rotateY(180deg);
+                        
+            a {
+                text-decoration: none;
+                @include mixin.font(28px, 600, 100%, #ffffff);
+                writing-mode: vertical-rl;  
+            }
+        }
+
+        &-block3 {
+            width: 296px;
+            @include mixin.flex(flex-start, flex-start, 0, row);
+            padding: 24px 42px 24px 45px;
+
+            &-left {
+                width: 50%;
+                @include mixin.flex(flex-start, flex-start, 70px, column);
+
+
+                img:nth-child(2) {
+                    align-self: center;
+                    margin-bottom: 38px;
+                }
+
+                img:nth-child(3) {
+                    align-self: flex-end;
+                }
+            }
+
+            &-right {
+                width: 50%;
+                @include mixin.flex(center, flex-end, 76px, column);
+                padding-top: 59px;
+
+                img:nth-child(2) {
+                    align-self: center;
+                }
+            }
+        }
+    }
 }
