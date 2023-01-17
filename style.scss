@@ -23,6 +23,7 @@ $var6: 736;
 $var7: 460;
 $var8: 472;
 $var9: 932;
+$var10: 948;
 
 // width: $var3*$var2/$var1;
 
@@ -451,4 +452,71 @@ $var9: 932;
     @include mixin.font(48px, 500, 58px, #000000);
     text-align: center;
     margin-bottom: 24px;
+}
+
+.five {
+    @include mixin.flex(flex-start, flex-start, 24px, column);
+    width: $var3*$var2/$var1;
+    margin: auto;
+    margin-bottom: 32px;
+
+    &-blocks {
+        @include mixin.flex(flex-start, flex-start, 0, row);
+
+        &-right {
+            width: 948px;
+            height: 560px;
+            background-color: #FFCB45;
+            border-radius: 10px;
+        }
+
+        &-left {
+            width: 460px;
+            background-color: #302C2C;
+            padding: 24px 16px 43px 24px;
+            border-radius: 10px;
+            @include mixin.flex(flex-start, flex-start, 48px, column);
+
+            &-top {
+                @include mixin.flex(flex-start, flex-start, 57px, row);
+
+                p {
+                    @include mixin.font(48px, 800, 110%, #ffffff);
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 7;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                }
+
+                &-spans {
+                    
+                    @include mixin.flex(space-between, flex-start, 13px, row);
+                    @include mixin.font(12px, 400, 140%, #ffffff);
+                    writing-mode: vertical-rl;   
+
+
+    
+                    &-span2 {
+                        @include mixin.flex(flex-start, flex-start, 5px, row);
+                    }
+                }
+
+            }
+
+            &-bottom {
+                width: 80%;
+                @include mixin.font(18px, 500, 140%, #ffffff);
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+        }
+
+    }
+
+    &-blocks:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 }
