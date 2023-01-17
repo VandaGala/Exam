@@ -444,6 +444,12 @@ $var10: 948;
             flex-direction: row-reverse;
         }
     }
+
+    &-right {
+        @include mixin.flex(center, center, 0, row);
+        @include mixin.font(48px, 500, 58px, #000000);
+        text-align: center;
+    }
 }
 
 .four {
@@ -581,4 +587,86 @@ $var10: 948;
         }
     }
 
+}
+
+.seven {
+    width: $var3*$var2/$var1;
+    margin: auto;
+    @include mixin.flex(flex-start, flex-start, 16px,row);
+    margin-bottom: 48px;
+
+    &-right {
+        width: $var7*$var2/$var3;
+        height: 920px;
+        background-color: #93FF82;
+        border-radius: 10px;
+
+    }
+
+    &-left {
+        width: 67%;
+        @include mixin.flex(flex-start, flex-start, 16px, column);
+
+        &-blocks {
+            @include mixin.flex(flex-start, flex-start, 0, row);
+            width: $var9;
+            height: 360px;
+
+            &-block2 {
+                width: 51%;
+                height: 360px;
+                border-radius: 10px;
+                background-color: #FFC7F3;
+            }
+
+            &-block {
+                width: 49%;
+                height: 360px;
+                @include mixin.flex(space-between, flex-start, 0, column);
+                padding: 16px 52px 16px 16px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+                h5 {
+                    @include mixin.font(36px, 800, 110%, #000000);
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                    
+                }
+
+                p {
+                    margin-top: 43px;
+                    @include mixin.font(18px, 500, 120%, #000000);
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                }
+
+                &-spans {
+                    margin-top: 16px;
+                    @include mixin.flex(flex-start, flex-start, 13px, row);
+                    @include mixin.font(12px, 400, 140%, #000000);   
+    
+                    &-span2 {
+                        @include mixin.flex(flex-start, flex-start, 5px, row);
+                    }
+                }
+            }
+        }
+
+        &-blocks:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &-right {
+        @include mixin.flex(center, center, 0, row);
+        @include mixin.font(48px, 500, 58px, #000000);
+        text-align: center;
+    }
 }
