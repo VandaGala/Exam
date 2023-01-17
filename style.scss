@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -19,6 +21,8 @@ $var4: 580;
 $var5: 320;
 $var6: 736;
 $var7: 460;
+$var8: 472;
+$var9: 932;
 
 // width: $var3*$var2/$var1;
 
@@ -299,6 +303,7 @@ $var7: 460;
     width: $var3*$var2/$var1;
     margin: auto;
     @include mixin.flex(center, center, 14px,row);
+    margin-bottom: 24px;
 
     &-block {
         width: $var7*$var2/$var3;
@@ -356,4 +361,94 @@ $var7: 460;
             }
         }
     }
+}
+
+.three {
+    width: $var3*$var2/$var1;
+    margin: auto;
+    @include mixin.flex(flex-start, flex-start, 16px,row);
+    margin-bottom: 48px;
+
+    &-right {
+        width: $var7*$var2/$var3;
+        height: 920px;
+        background-color: #93FF82;
+        border-radius: 10px;
+
+    }
+
+    &-left {
+        @include mixin.flex(flex-start, flex-start, 16px, column);
+
+        &-blocks {
+            @include mixin.flex(flex-start, flex-start, 0, row);
+            width: $var9;
+            height: 360px;
+
+            &-block2 {
+                width: 472px;
+                // width: $var8*$var2/$var9;
+                height: 360px;
+                border-radius: 10px;
+                background-color: #FFC7F3;
+            }
+
+            &-block {
+                width: 460px;
+                height: 360px;
+                // width: $var7*$var2/$var9;
+                @include mixin.flex(space-between, flex-start, 0, column);
+                padding: 16px 52px 16px 16px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+                h5 {
+                    // width: 74%;
+                    @include mixin.font(36px, 800, 110%, #000000);
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                    
+                }
+
+                p {
+                    // width: 74%;
+                    margin-top: 43px;
+                    @include mixin.font(18px, 500, 120%, #000000);
+                    margin: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                }
+
+                &-spans {
+                    margin-top: 16px;
+                    @include mixin.flex(flex-start, flex-start, 13px, row);
+                    @include mixin.font(12px, 400, 140%, #000000);   
+    
+                    &-span2 {
+                        @include mixin.flex(flex-start, flex-start, 5px, row);
+                    }
+                }
+            }
+        }
+
+        &-blocks:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.four {
+    width: $var3*$var2/$var1;
+    margin: auto;
+    height: 363px;
+    background-color: #93FF82;
+    @include mixin.flex(center, center, 0, row);
+    @include mixin.font(48px, 500, 58px, #000000);
+    text-align: center;
+    margin-bottom: 24px;
 }
