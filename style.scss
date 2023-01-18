@@ -21,6 +21,9 @@
         }
     }
 
+    .mobile-menu {
+        display: none;
+    }
 }
 
 
@@ -1002,6 +1005,10 @@ $var14: 359;
 
     .header {
         width: $var12*$var2/$var11;
+
+        &-top {
+            height: 172px;
+        }
         &-search {
             width: 100%;
             @include mixin.flex(center, center, 16px, row);
@@ -1677,6 +1684,32 @@ $var14: 359;
 @media only screen and (max-width: 375px) {
     .container {
         width: 375px;
+        margin: auto;
+
+        .mobile-menu {
+            z-index: 5;
+            display: block ;
+            width: 100%;
+            background-color: #000000;
+            position: fixed;
+            bottom: 0;
+
+            ul {
+                @include mixin.flex(center, center, 0, row);     
+                
+                .menu-tab {
+                    width: 25%;
+                    @include mixin.flex(center, center, 6px, column);
+                    padding: 10px 15px 8px 20px;
+
+                    a {
+                        text-decoration: none;
+                        @include mixin.font(13px, 500, 18px, #777777);
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .header {
@@ -1694,6 +1727,7 @@ $var14: 359;
             width: 100%;
             @include mixin.flex(center, center, 16px, row);
             margin-bottom: 8px;
+            margin: auto;
             .logo {
                 margin-right: 0;
             }
@@ -2049,10 +2083,8 @@ $var14: 359;
         margin: auto;
         @include mixin.flex(flex-start, flex-start, 8px, column);
         padding-bottom: 167px;
-        background-image: url(../images/LOGOTYPE4.png);
-        background-repeat: no-repeat;
-        background-position: 0 bottom;
         background-size: contain;
+        background-position: 0 94%;
     
         &-top {
             width: 100%;
