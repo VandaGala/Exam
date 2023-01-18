@@ -59,7 +59,7 @@
   width: 41.1931818182%;
   height: 48px;
   background-color: #302C2C;
-  padding: 14px 18px;
+  padding: 16px 0 14px 16px;
   border-radius: 10px;
   margin-right: 29px;
   background-image: url(../images/Vector.png);
@@ -69,6 +69,13 @@
 .header-search-span input {
   background-color: #302C2C;
   border: none;
+}
+.header-search-span input::placeholder {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #777777;
 }
 .header-search-span input:focus {
   outline: none;
@@ -97,6 +104,12 @@
   font-weight: 400;
   line-height: 120%;
   color: #ffffff;
+}
+.header-search-settings {
+  display: none;
+}
+.header-search-checkbox {
+  display: none;
 }
 .header-list {
   width: 97.7777777778%;
@@ -180,14 +193,14 @@
   border-radius: 10px;
   padding: 12px;
 }
-.one-left-img {
+.one-left-top .one-left-img {
   width: 296px;
   height: 182px;
   background-color: #e5e5e5;
   border-radius: 10px;
   margin-bottom: 4px;
 }
-.one-left h5 {
+.one-left-top h5 {
   padding: 0;
   margin: 0;
   font-family: "Inter";
@@ -242,6 +255,9 @@
   color: #000000;
   margin: 0;
   padding-left: 4px;
+}
+.one-left-blocks a .one-left-blocks-block-text .par-mobile {
+  display: none;
 }
 .one-center {
   width: 52.2727272727%;
@@ -309,6 +325,9 @@
 .one-right .one-right-list li p span {
   color: #777777;
 }
+.one-right .one-right-mobile {
+  display: none;
+}
 .one-right ul {
   margin: 0;
   padding: 0;
@@ -339,6 +358,12 @@
   background-color: #000000;
   border-radius: 10px;
   padding: 16px 68px 16px 16px;
+}
+.two-block-bottom-div {
+  display: none;
+}
+.two-block-bottom .two-par-mobile {
+  display: none;
 }
 .two-block-bottom h5 {
   font-family: "Inter";
@@ -1082,4 +1107,234 @@
 }
 .footer-bottom-block3-right img:nth-child(2) {
   align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .header {
+    width: 95.8333333333%;
+  }
+  .header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+  }
+  .header-search .logo {
+    margin-right: 0;
+  }
+  .header-search-drop-down1 {
+    display: none;
+  }
+  .header-search-drop-down2 {
+    display: none;
+  }
+  .header-search-settings {
+    display: block;
+  }
+  .header-search-settings a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  .header-search-span {
+    margin-right: 0;
+    background-position: 93% center;
+  }
+  .header-search-span input::placeholder {
+    padding: 15px 0 11px 0px;
+  }
+  .header-search-checkbox {
+    display: block;
+  }
+  .header-search-checkbox .header-checkbox-basic {
+    width: 84px;
+    height: 48px;
+    background-color: #000000;
+    border-radius: 32px;
+    background-image: url(../images/Vector1.png);
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    position: relative;
+    margin-left: 21px;
+    padding: 4px;
+  }
+  .header-search-checkbox .header-checkbox-basic-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 100%;
+  }
+  .header-list-blocks .header-li {
+    display: none;
+  }
+  .header-list-checkbox {
+    display: none;
+  }
+
+  .one {
+    width: 95.8333333333%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .one-center {
+    width: 100%;
+    order: -1;
+  }
+  .one-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: row;
+  }
+  .one-left-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .one-left-top .one-left-img {
+    width: 336px;
+    height: 228px;
+  }
+  .one-left-top h5 {
+    margin-bottom: 0;
+  }
+  .one-left-blocks {
+    gap: 32px;
+  }
+  .one-left-blocks a .one-left-blocks-block {
+    width: 100%;
+  }
+  .one-left-blocks a .one-left-blocks-block-text {
+    width: 78%;
+  }
+  .one-left-blocks a .one-left-blocks-block-text-head {
+    width: 103px;
+  }
+  .one-left-blocks a .one-left-blocks-block-text .par {
+    display: none;
+  }
+  .one-left-blocks a .one-left-blocks-block-text .par-mobile {
+    display: block;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000000;
+    margin: 0;
+  }
+  .one-right {
+    width: 95.8333333333%;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .one-right h5 {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 110%;
+    color: #000000;
+    margin: 0;
+  }
+  .one-right .one-right-mobile {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .one-right .one-right-mobile-div {
+    width: 100vw;
+    height: 1px;
+    border: 1px solid #E3E3E3;
+  }
+  .one-right .one-right-mobile-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: row;
+  }
+  .one-right .one-right-mobile-list li p {
+    width: 191px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 12px 0 2px 0;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #000000;
+    text-transform: lowercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .one-right .one-right-mobile-list li p span {
+    color: #777777;
+  }
+  .one-right .one-right-list {
+    display: none;
+  }
+  .one-right ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .two {
+    width: max-content;
+    margin-left: 16px;
+  }
+  .two-block-top {
+    display: none;
+  }
+  .two-block-bottom {
+    width: 359px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+    padding: 12px;
+  }
+  .two-block-bottom h5 {
+    display: none;
+  }
+  .two-block-bottom p {
+    display: none;
+  }
+  .two-block-bottom-div {
+    display: block;
+    width: 335px;
+    height: 240px;
+    background-color: #EA2E34;
+    border-radius: 10px;
+  }
+  .two-block-bottom .two-par-mobile {
+    display: block;
+    width: 66%;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #ffffff;
+  }
 }
