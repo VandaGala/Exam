@@ -1493,7 +1493,7 @@
     flex-wrap: wrap;
     width: 95.8333333333%;
     margin: auto;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
   .five-blocks {
     width: 359px;
@@ -1580,5 +1580,102 @@
   }
   .five-blocks:nth-child(even) {
     flex-direction: column-reverse;
+  }
+
+  .six {
+    width: 95.8333333333%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .six-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    flex-direction: row;
+  }
+  .six-block-left {
+    width: 140px;
+    height: 140px;
+  }
+  .six-block-right {
+    width: 82%;
+    padding: 24px 32px 45px 24px;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #000000;
+  }
+  .six-block-right p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .seven {
+    display: none;
+  }
+
+  .eight {
+    width: 95.8333333333%;
+  }
+  .eight-top {
+    display: none;
+  }
+  .eight-bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .eight-bottom-head img {
+    width: 210px;
+  }
+  .eight-bottom-head p {
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 110%;
+    color: #000000;
+  }
+  .eight-bottom-form form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .eight-bottom-form {
+    width: 100%;
+    padding: 24px;
+  }
+  .eight-bottom-form-btn {
+    width: 100%;
+    background-color: #EA2E34;
+    padding: 31.5px 0;
+  }
+  .eight-bottom-form .input {
+    width: 100%;
+  }
+  .eight-bottom-form .input input::placeholder {
+    font-family: "Inter";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #bebebe;
+    text-align: center;
+  }
+  .eight-bottom-form .input input {
+    padding: 18px 0 0 0;
+    height: 98px;
+    width: 100%;
   }
 }

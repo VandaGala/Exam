@@ -1318,7 +1318,7 @@ $var12: 736;
         flex-wrap: wrap;
         width: $var12*$var2/$var11;
         margin: auto;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     
         &-blocks {
             width: 359px;
@@ -1393,6 +1393,92 @@ $var12: 736;
         }
     }
     
+    .six {
+        width: $var12*$var2/$var11;
+        @include mixin.flex(flex-start, flex-start, 8px, column);
+        margin-bottom: 24px;
+    
+        &-block {
+            @include mixin.flex(flex-start, flex-start, 0, row);
+    
+            &-left {
+                width: 140px;
+                height: 140px;
+            }
+    
+    
+            &-right {
+                width: 82%;
+                padding: 24px 32px 45px 24px;
+    
+                @include mixin.font(24px, 700, 100%, #000000);
+    
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;                
+                }
+            }
+        }
+    }
+
+    .seven {
+        display: none;
+    }
+
+    .eight {
+        width: $var12*$var2/$var11;
+        &-top {
+            display: none;
+        }
+
+        &-bottom {
+            @include mixin.flex(flex-start, flex-start, 16px, column);            
+                
+            &-head {
+
+                img {
+                    width: 210px;
+                }
+
+                p {
+                    @include mixin.font(48px, 600, 110%, #000000);
+                }
+            }
+
+            &-form form {
+                width: 100%;
+                @include mixin.flex(space-between, flex-start, 24px, column);
+            }
+    
+            &-form {
+                width: 100%;
+                padding: 24px;
+    
+                &-btn {
+                    width: 100%;
+                    background-color: #EA2E34;
+                    padding: 31.5px 0;
+                }
+    
+                .input {
+                    width: 100%;
+                }
+    
+                .input input::placeholder {
+                    @include mixin.font(36px, 600, 100%, #bebebe);
+                    text-align: center;
+                }
+    
+                .input input {
+                    padding: 18px 0 0 0;
+                    height: 98px;
+                    width: 100%;
+                }
+            }
+        }
+    }
 
 
 }
