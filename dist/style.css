@@ -1723,7 +1723,10 @@
   width: 100%;
   margin: auto;
   padding-left: 16px;
+<<<<<<< HEAD
   margin-bottom: 40px;
+=======
+>>>>>>> f5246cd042ba38eb3161ad47ebcfd072fd66041e
 }
 .six-page-list {
   display: flex;
@@ -1745,6 +1748,7 @@
   border-radius: 8px;
 }
 
+<<<<<<< HEAD
 .seven-page {
   width: 97.7777777778%;
   margin: auto;
@@ -1975,6 +1979,8 @@
   outline: none;
 }
 
+=======
+>>>>>>> f5246cd042ba38eb3161ad47ebcfd072fd66041e
 @media only screen and (max-width: 768px) {
   .container {
     width: 768px;
