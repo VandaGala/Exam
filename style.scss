@@ -1278,7 +1278,7 @@ $var14: 359;
 .five-page {
     width: $var3*$var2/$var1;
     margin: auto;
-    @include mixin.flex(flex-start, flex-start, 16px, row);
+    @include mixin.flex(flex-start, flex-start, 16px, column);
 
     &-left {
         width: 66%;
@@ -1421,10 +1421,7 @@ $var14: 359;
     // width: 1440px;
     margin: auto;
     padding-left: 16px;
-<<<<<<< HEAD
     margin-bottom: 40px;
-=======
->>>>>>> f5246cd042ba38eb3161ad47ebcfd072fd66041e
 
 
     &-list {
@@ -1441,7 +1438,6 @@ $var14: 359;
     }
 }
 
-<<<<<<< HEAD
 .seven-page {
     width: $var3*$var2/$var1;
     margin: auto;
@@ -1626,8 +1622,10 @@ $var14: 359;
     }
 }
 
-=======
->>>>>>> f5246cd042ba38eb3161ad47ebcfd072fd66041e
+.dop-section {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     .container {
@@ -2309,6 +2307,295 @@ $var14: 359;
                 }
             }
     }
+
+    .one-page {
+        width: $var12*$var2/$var11;
+        margin-left: 0;
+        margin: auto;
+        margin-bottom: 16px;
+
+        h1 {
+            @include mixin.font(36px, 800, 110%, #000000);        
+        }
+    }
+
+    .two-page {
+        width: $var12*$var2/$var11;
+        margin: auto;
+        // padding-left: 27px;
+        @include mixin.flex(flex-start, flex-start, 16px, row);
+        position: relative;
+    
+        &-left {
+            width: 62%;
+            @include mixin.flex(flex-start, flex-end, 40px, column);
+            margin-bottom: 40px;
+    
+            &-top {
+                @include mixin.flex(flex-start, flex-start, 16px, column-reverse);
+    
+                &-icons {
+                    @include mixin.flex(flex-start, center, 30px, row);
+    
+                    .two-page-list {
+                        @include mixin.flex(flex-start, center, 20px, row);
+                        list-style-type: none;
+                    }
+    
+                    p {
+                        writing-mode: horizontal-tb;
+                        transform: rotateX(0deg) rotateY(0deg);
+                        @include mixin.font(12px, 400, 140%, #000000);
+                        text-align: start;
+                        order: -1;
+                        margin-left: 24px;
+                    }
+                }
+    
+                &-img {
+                    width: 454px;
+                    height: 257px;
+                    border-radius: 10px;
+                    background-color: #e3e3e3;
+                }
+            }
+    
+            &-par1 {
+                width: 100%;
+                @include mixin.font(16px, 500, 22.4px, #000000);
+                align-self: flex-end;
+                margin-top: -16px;
+                margin-bottom: 168px;
+            }
+    
+            &-par2 {
+                width: 736px;
+                @include mixin.flex(center, center, 0, row);
+                @include mixin.font(18px, 500, 140%, #000000);
+                align-self: flex-end;
+                font-style: italic;
+                padding: 16px 24px;
+                background-color: #f0f0f0;
+                border-radius: 10px;
+                position: absolute;
+                top: 642px;
+                left: 0px;
+            }
+    
+            &-par3 {
+                width: 100%;
+                @include mixin.font(16px, 500, 140%, #000000);
+            }
+    
+            &-carousel {
+                @include mixin.flex(flex-start, flex-end, 16px, row);
+    
+                &-icons {
+                    display: none;
+                }
+    
+                &-box {
+                    width: 736px;
+                    height: 387px;
+
+                    margin-right: -278px;
+    
+                    &-circle {
+                        @include mixin.flex(center, center, 12px, row);
+                        width: 64px;
+                        height: 24px;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        backdrop-filter: blur(4px);
+                        border-radius: 12px;
+                        position: absolute;
+                        bottom: 16px;
+                        left: 44%;
+    
+                        .circle {
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 4px;
+                            background-color: #ffffff;
+                        }
+                    }
+    
+                    &::before {
+                        content: "";
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;                    
+                        background-image: url(../images/_Carousel-arrow1.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+    
+                        top: 45%;
+                        left: 16px;  
+                    }
+    
+                    &::after {
+                        content: "";
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;                    
+                        background-image: url(../images/_Carousel-arrow.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+    
+                        top: 45%;
+                        right: 16px;  
+                    }
+                }
+            }
+    
+            &-par4 {
+                width: 100%;
+                @include mixin.font(16px, 500, 140%, #000000);
+            }
+        }
+    
+        &-right {
+            width: 32.7%;
+    
+            &-top {
+                display: none;
+            }
+    
+            &-bottom {
+                width: 100%;
+                height: 532px;
+                border-radius: 10px;
+                background-color: #93FF82;
+                @include mixin.flex(center, center, 0, column);
+                text-align: center;
+                @include mixin.font(30px, 500, 33px, #000000);
+            }
+        }
+    }
+
+    .three-page {
+        width: $var12*$var2/$var11;
+        @include mixin.flex(flex-start, flex-start, 0, row);
+        margin-right: 0;
+        margin: auto;
+        margin-bottom: 24px;
+    
+        &-text {
+            width: 100%;
+            background-color: #9C9CFF;
+            border-radius: 10px;
+            padding: 16px;
+    
+            p {
+                @include mixin.font(36px, 800, 110%, #ffffff);
+            }
+        }
+    }
+    
+    .four-page {
+        width: $var12*$var2/$var11;
+        margin: auto;
+    
+    
+        &-left {
+            width: 66%;
+            @include mixin.flex(flex-start, flex-start, 40px, column);
+            margin-bottom: 40px;
+    
+            p {
+                width: 100%;
+                @include mixin.font(16px, 500, 140%, #000000);
+                align-self: flex-start;
+            }
+    
+            
+        }
+    
+    }
+
+    .dop-section {
+        width: $var12*$var2/$var11;
+        @include mixin.flex(flex-start, flex-start, 24px, column);
+        margin: auto;
+        margin-bottom: 24px;
+
+        &-top {
+            width: 454px;
+            height: 257px;
+            border-radius: 10px;
+            background-color: #e3e3e3;
+        } 
+
+        &-bottom {
+            width: 66%;
+            @include mixin.font(16px, 500, 140%, #000000);
+        }
+    }
+
+    .five-page {
+        width: $var12*$var2/$var11;
+        margin: auto;
+        @include mixin.flex(flex-start, flex-start, 0px, column);
+    
+        &-left {
+            width: 100%;
+            @include mixin.flex(flex-start, flex-start, 24px, column);
+            margin-bottom: 0px;
+    
+            &-top {
+                @include mixin.flex(flex-start, center, 16px, row);
+    
+                &-icons {
+                    display: none;
+                }
+    
+                &-img {
+                    width: 736px;
+                    height: 417px;
+                    border-radius: 10px;
+                    background-color: #e3e3e3;
+                }
+            }
+    
+            &-center {
+                width: 100%;
+            }
+    
+            &-bottom {
+                @include mixin.flex(space-between, flex-end, 16px, row);
+                margin-left: 0px;
+                margin-bottom: 36px;
+    
+                &-icons {
+                    display: none;
+                }
+    
+                &-par {
+                
+                        width: 75.6%;
+                        @include mixin.font(16px, 500, 140%, #000000);
+                        align-self: flex-start;
+                        padding-bottom: 0px;
+                    
+                }
+            }
+        }
+    
+        &-right {
+            &-text {
+                display: none;                
+            }
+
+            &-info {
+                width: 460px;
+                margin-left: 136px;
+                display: block;
+                text-align: center;
+            }
+
+        }
+    }
+
+
 
 }
 
