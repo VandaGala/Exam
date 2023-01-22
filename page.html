@@ -9,8 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <input type="checkbox" name="header-checkbox" id="header-checkbox">
+        <input type="checkbox" name="header-checkbox" id="header-checkbox">    
+        <div class="container">
+
         <div class="mobile-menu">
             <ul>
                 <div class="menu-tab">
@@ -61,8 +62,9 @@
                 <div class="header-search-settings"><a href="">Настройки</a></div>
 
                 <div class="header-search-checkbox">
-                    <label for="header-checkbox">
+                    <label for="header-checkbox" class="label">
                         <div class="header-checkbox-basic">
+                            <div class="header-checkbox-basic-luna"><img src="images/luna.png" alt=""></div>
                             <div class="header-checkbox-basic-circle"></div>
                         </div>
                     </label>
@@ -88,11 +90,13 @@
                     <li><div class="header-li">STEPPE TAG</div></li>
                 </ul>
 
-                <img src="images/Chevron up.png" alt="" class="">
+                <img src="images/Chevron up.png" alt="" class="arrow-light">
+                <img src="images/Chevronupdark.png" alt="" class="arrow-dark">
 
                 <div class="header-list-checkbox">
-                    <label for="header-checkbox">
+                    <label for="header-checkbox" class="label">
                         <div class="header-checkbox-basic">
+                            <div class="header-checkbox-basic-luna"><img src="images/luna.png" alt=""></div>
                             <div class="header-checkbox-basic-circle"></div>
                         </div>
                     </label>
@@ -106,7 +110,11 @@
                     <div class="one-page-bottom">
                         <div class="one-page-bottom-spans">
                             <span>19 Июля, 2022 </span>
-                            <div class="one-page-bottom-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                            <div class="one-page-bottom-spans-span2">
+                                <img src="images/clock-circle.png" alt="" class="dark">
+                                <img src="images/clock-circle1.png" alt="" class="light">
+                                <span>20 минут</span>
+                            </div>
                         </div>
                         <ul class="one-page-bottom-list">
                             <li><a href="">Name Name</a></li>
@@ -119,13 +127,23 @@
             <section class="two-page">
                 <div class="two-page-left">
                     <div class="two-page-left-top">
-                        <div class="two-page-left-top-icons">
+                        <div class="two-page-left-top-icons light">
                             <ul class="two-page-list">
                                 <li><a href=""><img src="images/whatsapp.png" alt=""></a></li>
                                 <li><a href=""><img src="images/vector88.png" alt=""></a></li>
                                 <li><a href=""><img src="images/facebook1.png" alt=""></a></li>
                                 <li><a href=""><img src="images/sms.31.png" alt=""></a></li>
                                 <li><a href=""><img src="images/link-1.31.png" alt=""></a></li>
+                            </ul>
+                            <p>ПОДПИШИСЬ</p>
+                        </div>
+                        <div class="two-page-left-top-icons dark">
+                            <ul class="two-page-list">
+                                <li><a href=""><img src="images/whatsappdark.png" alt=""></a></li>
+                                <li><a href=""><img src="images/vector-dark.png" alt=""></a></li>
+                                <li><a href=""><img src="images/facebook-dark.png" alt=""></a></li>
+                                <li><a href=""><img src="images/sms.3dark.png" alt=""></a></li>
+                                <li><a href=""><img src="images/link-1.3dark.png" alt=""></a></li>
                             </ul>
                             <p>ПОДПИШИСЬ</p>
                         </div>
@@ -156,7 +174,7 @@
                     </div>
 
                     <div class="two-page-left-carousel">
-                        <div class="two-page-left-top-icons">
+                        <div class="two-page-left-top-icons light">
                             <ul class="two-page-list">
                                 <li><a href=""><img src="images/whatsapp.png" alt=""></a></li>
                                 <li><a href=""><img src="images/vector88.png" alt=""></a></li>
@@ -166,6 +184,7 @@
                             </ul>
                             <p>ПОДПИШИСЬ</p>
                         </div>
+
                         <div class="two-page-left-carousel-box">
                             <div class="two-page-left-carousel-box-circle">
                                 <div class="circle"></div>
@@ -318,7 +337,7 @@
             <section class="five-page">
                 <div class="five-page-left">
                     <div class="five-page-left-top">
-                        <div class="five-page-left-top-icons">
+                        <div class="five-page-left-top-icons light">
                             <ul class="five-page-list">
                                 <li><a href=""><img src="images/whatsapp.png" alt=""></a></li>
                                 <li><a href=""><img src="images/vector88.png" alt=""></a></li>
@@ -345,7 +364,7 @@
                     </div>
 
                     <div class="five-page-left-bottom">
-                        <div class="five-page-left-bottom-icons">
+                        <div class="five-page-left-bottom-icons light">
                             <ul class="five-page-list">
                                 <li><a href=""><img src="images/whatsapp.png" alt=""></a></li>
                                 <li><a href=""><img src="images/vector88.png" alt=""></a></li>
@@ -355,6 +374,7 @@
                             </ul>
                             <p>ПОДПИШИСЬ</p>
                         </div>
+
                         <p class="five-page-left-bottom-par">Dolor consectetur curabitur nisl vulputate facilisis. Consequat hac non, 
                             fermentum, iaculis habitasse ut egestas tellus. Massa massa, pulvinar odio 
                             molestie est libero. Turpis sem nunc fusce id mattis sem ante placerat. 
@@ -453,81 +473,84 @@
             <section class="seven-page">
                 <h2>Читайте также</h2>
                 <div class="seven-page-box">
-                <div class="seven-page-box-left">
-                    <div class="seven-page-box-left-blocks">
-                        <div class="seven-page-box-left-blocks-block">
-                            <h5>Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
-                            <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
-                                18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
-                                Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
-                                Inter - Medium - 18 - </p>
-                            <div class="seven-page-box-left-blocks-block-spans">
-                                <span>19 Июля, 2022 </span>
-                                <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                    <div class="seven-page-box-left">
+                        <div class="seven-page-box-left-blocks">
+                            <div class="seven-page-box-left-blocks-block">
+                                <h5>Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
+                                <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
+                                    18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
+                                    Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
+                                    Inter - Medium - 18 - </p>
+                                <div class="seven-page-box-left-blocks-block-spans">
+                                    <span>19 Июля, 2022 </span>
+                                    <div class="seven-page-box-left-blocks-block-spans-span2">
+                                        <img src="images/clock-circle.png" alt="" class="dark">
+                                        <img src="images/clock-circle1.png" alt="" class="light"><span>20 минут</span>
+                                    </div>
+                                </div>
+                                <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
                             </div>
-                            <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
-                        </div>
-                        <div class="seven-page-box-left-blocks-block2"></div>
-                    </div> <!--seven-page-left-blocks-->
+                            <div class="seven-page-box-left-blocks-block2"></div>
+                        </div> <!--seven-page-left-blocks-->
 
-                    <div class="seven-page-box-left-blocks">
-                        <div class="seven-page-box-left-blocks-block">
-                            <h5>Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
-                            <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
-                                18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
-                                Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
-                                Inter - Medium - 18 - </p>
-                            <div class="seven-page-box-left-blocks-block-spans">
-                                <span>19 Июля, 2022 </span>
-                                <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                        <div class="seven-page-box-left-blocks">
+                            <div class="seven-page-box-left-blocks-block">
+                                <h5>Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
+                                <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
+                                    18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
+                                    Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
+                                    Inter - Medium - 18 - </p>
+                                <div class="seven-page-box-left-blocks-block-spans">
+                                    <span>19 Июля, 2022 </span>
+                                    <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                                </div>
+                                <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
                             </div>
-                            <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
-                        </div>
-                        <div class="seven-page-box-left-blocks-block2"></div>
-                    </div> <!--seven-page-left-blocks-->
+                            <div class="seven-page-box-left-blocks-block2"></div>
+                        </div> <!--seven-page-left-blocks-->
 
-                    <div class="seven-page-box-left-blocks">
-                        <div class="seven-page-box-left-blocks-block">
-                            <h5>Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
-                            <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
-                                18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
-                                Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
-                                Inter - Medium - 18 - </p>
-                            <div class="seven-page-box-left-blocks-block-spans">
-                                <span>19 Июля, 2022 </span>
-                                <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                        <div class="seven-page-box-left-blocks">
+                            <div class="seven-page-box-left-blocks-block">
+                                <h5>Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
+                                <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
+                                    18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
+                                    Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
+                                    Inter - Medium - 18 - </p>
+                                <div class="seven-page-box-left-blocks-block-spans">
+                                    <span>19 Июля, 2022 </span>
+                                    <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                                </div>
+                                <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
                             </div>
-                            <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
-                        </div>
-                        <div class="seven-page-box-left-blocks-block2"></div>
-                    </div> <!--seven-page-left-blocks-->     
-                    
-                    <div class="seven-page-box-left-blocks hidden">
-                        <div class="seven-page-box-left-blocks-block">
-                            <h5>Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
-                                Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
-                            <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
-                                18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
-                                Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
-                                Inter - Medium - 18 - </p>
-                            <div class="seven-page-box-left-blocks-block-spans">
-                                <span>19 Июля, 2022 </span>
-                                <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                            <div class="seven-page-box-left-blocks-block2"></div>
+                        </div> <!--seven-page-left-blocks-->     
+                        
+                        <div class="seven-page-box-left-blocks hidden">
+                            <div class="seven-page-box-left-blocks-block">
+                                <h5>Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - Title - 
+                                    Inter - Extra Bold - 36 - Title - Inter - Extra Bold - 36 - </h5>
+                                <p>Subtitle - Inter - Medium - 18 - Subtitle - Inter - Medium - 
+                                    18 - Subtitle - Inter - Medium - 18 - Subtitle - Inter - 
+                                    Medium - 18 - Subtitle - Inter - Medium - 18 - Subtitle - 
+                                    Inter - Medium - 18 - </p>
+                                <div class="seven-page-box-left-blocks-block-spans">
+                                    <span>19 Июля, 2022 </span>
+                                    <div class="seven-page-box-left-blocks-block-spans-span2"><img src="images/clock-circle1.png" alt=""><span>20 минут</span></div>
+                                </div>
+                                <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
                             </div>
-                            <p class="seven-page-par-mobile">NASA опубликовало первое сверхчеткое изображение вселенной</p>
-                        </div>
-                        <div class="seven-page-box-left-blocks-block2"></div>
-                    </div> <!--seven-page-left-blocks-->  
-                </div>
+                            <div class="seven-page-box-left-blocks-block2"></div>
+                        </div> <!--seven-page-left-blocks-->  
+                    </div>
     
-                <div class="seven-page-box-right">A4<br>700x1440</div>
+                    <div class="seven-page-box-right">A4<br>700x1440</div>
                 </div>
             </section> <!--seven-page-->
 
